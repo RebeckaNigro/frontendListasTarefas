@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-tarefas">
+        <h1>Gerenciamento de Tarefas</h1>
+
+        <!-- Formulário de Criação de Tarefa -->
+        <form id="formTarefa" onsubmit="event.preventDefault(); criarTarefa(titulo.value, descricao.value, status.value)">
+            <input type="text" id="titulo" placeholder="Título da Tarefa" required />
+            <textarea id="descricao" placeholder="Descrição da Tarefa" required></textarea>
+            <select id="status" required>
+                <option value="Pendente">Pendente</option>
+                <option value="EmAndamento">Em andamento</option>
+                <option value="Concluida">Concluída</option>
+            </select>
+            <button type="submit">Criar Tarefa</button>
+        </form>
+
+    </div>
+    <footer>
+        <p>
+            Ícones feitos por 
+            <a href="https://www.flaticon.com/br/icones-gratis/atividades" title="atividades ícones" target="_blank">
+                GOWI - Flaticon
+            </a>
+        </p>
+    </footer>
+
+    <script src="js/tarefas.js"></script>
+</body>
+</html>

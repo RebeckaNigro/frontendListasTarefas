@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/atividades.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Lista de Tarefas <img id="imgLogo" src="./img/atividades.png" alt="logo"></h1>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#" id="formCadastrar">
+                <h2>Criar Conta</h2>
+                <span>Criar conta usando o Email:</span>
+                <input type="text" id="nomeCadastro" placeholder="Nome" required />
+                <input type="email" id="emailCadastro" placeholder="Email" required />
+                <input type="password" id="senhaCadastro" placeholder="Senha" required />
+                <button type="submit" class="rounded" id="btnCriar">Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="formLogin">
+                <h2>Entrar</h2>
+                <span>Entrar com Email:</span>
+                <input type="email" id="emailLogin" placeholder="Email" required />
+                <input type="password" id="senhaLogin" placeholder="Senha" required />
+                <div class="menu-options">
+                    <button type="submit" class="menu-button" id="btnEntrar">Entrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h3>Bem Vindo!!!</h3>
+                    <p>Caso já possua uma conta, faça o login com suas informações</p>
+                    <button class="ghost rounded" id="signIn">Entrar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h3>Bem-vindo de novo!</h3>
+                    <p>Caso não possua uma conta, faça o cadastro com suas informações</p>
+                    <button class="ghost rounded" id="signUp">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>
+            Ícones feitos por 
+            <a href="https://www.flaticon.com/br/icones-gratis/atividades" title="atividades ícones" target="_blank">
+                GOWI - Flaticon
+            </a>
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
